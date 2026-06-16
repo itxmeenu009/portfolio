@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>Noor ul Amin - Front-end Architect Portfolio</title>
+  <meta name="description" content="Noor ul Amin - Front-end Architect specializing in high-performance web experiences with Next.js, Tailwind, and TypeScript.">
+  <meta property="og:title" content="Noor ul Amin - Front-end Architect Portfolio">
+  <meta property="og:description" content="Building immersive digital experiences with modern web technologies.">
+  <meta property="og:image" content="./og-image.jpg">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+  <main class="main-container">
+    <div class="content-wrapper">
+      <section class="hero-section" id="hero" aria-label="Hero">
+        <div class="hero-glow-layer" id="heroGlowLayer"></div>
+        <div class="hero-grid">
+          <div class="profile-card">
+            <div class="profile-image-wrapper">
+              <img src="./img.jpg" 
+                   alt="Noor ul Amin - Front-end Architect" 
+                   class="profile-large-img"
+                   loading="lazy"
+                   width="160"
+                   height="160">
+              <div class="profile-status-dot"></div>
+            </div>
+            <div class="profile-info">
+              <h2 class="profile-card-name">Noor ul Amin</h2>
+              <p class="profile-card-title">Front-end Architect</p>
+              <div class="profile-tech-stack">
+                <span>HTML5</span>
+                <span>Tailwind</span>
+                <span>TypeScript</span>
+                <span>C++</span>
+                <span>PostgreSQL</span>
+                <span>JAVA</span>
+              </div>
+              <div class="profile-quick-contact">
+                <a href="mailto:noorijopu89@gmail.com" class="quick-icon" aria-label="Email Noor ul Amin"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/itxmeenu009" class="quick-icon" aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/noor-ul-amin-sadiq-48823b3a7" class="quick-icon" aria-label="LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-text">
+            <div class="available-badge">
+              <span class="pulse-dot"></span>
+              <span>Available for freelance & full-time</span>
+            </div>
+            <h1 class="hero-title">
+              <span id="typingTarget" class="gradient-text shimmer-text"></span>
+              <span class="typing-cursor"></span>
+            </h1>
+            <p class="hero-description">
+              I craft high-performance, visually immersive digital experiences with clean UI/UX, 
+              fluid motion, and modern architecture — ready for real-world impact.
+            </p>
+            <div class="hero-actions">
+              <button class="btn-primary" id="hireMeBtn" aria-label="Contact via WhatsApp">
+                <span>Hire Me</span>
+              </button>
+              <button class="btn-secondary" id="viewProjectsLink" aria-label="View projects section">View Projects</button>
+            </div>
+            <div class="trust-badge">
+              <div class="trust-stats">
+                <span class="stat-number">2+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="trust-stats">
+                <span class="stat-number">20+</span>
+                <span class="stat-label">Projects Delivered</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects-section" aria-label="Projects Showcase">
+        <div class="section-header">
+          <p class="section-eyebrow">Selected work</p>
+          <h2 class="section-title">Projects Showcase</h2>
+          <p class="section-subtitle">Modern web applications with attention to detail, performance, and elegance.</p>
+        </div>
+        <div id="projectsGrid" class="projects-grid">
+          <div class="project-card skeleton" aria-hidden="true">
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line"></div>
+            <div class="skeleton-line"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section" aria-label="Contact Section">
+        <div class="section-header">
+          <p class="section-eyebrow">Let's build</p>
+          <h2 class="section-title">Feedback & Contact</h2>
+          <p class="section-subtitle">Have a project in mind? Send a message, and let's create something extraordinary.</p>
+        </div>
+        <div class="contact-layout">
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-comment-dots"></i></div>
+            <h3 class="info-title">Quick note</h3>
+            <p class="info-text">Tell me about your project, timeline, and goals. I'll reply with a clear plan and estimate within 24h. I'll try to contact you via WhatsApp or Gmail directly.</p>
+          </div>
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-field">
+              <label for="formName">Your Name</label>
+              <input type="text" id="formName" name="name" placeholder="John Doe" class="form-input" autocomplete="given-name" inputmode="text" aria-required="true">
+              <div class="error-message" id="nameError"></div>
+            </div>
+            <div class="form-field">
+              <label for="formEmail">Email address</label>
+              <input type="email" id="formEmail" name="email" placeholder="hello@example.com" class="form-input" autocomplete="email" inputmode="email" aria-required="true">
+              <div class="error-message" id="emailError"></div>
+            </div>
+            <div class="form-field">
+              <label for="formPhone">Phone number</label>
+              <input type="tel" id="formPhone" name="phone" placeholder="+92 300 1234567" class="form-input" autocomplete="tel" inputmode="numeric" aria-required="true">
+              <div class="error-message" id="phoneError"></div>
+            </div>
+            <div class="form-field">
+              <label for="formMessage">Message</label>
+              <textarea id="formMessage" name="message" rows="4" placeholder="Tell me about your ideas..." class="form-textarea" aria-required="true"></textarea>
+              <div class="error-message" id="messageError"></div>
+            </div>
+            <button type="submit" id="submitBtn" class="btn-submit" aria-label="Send message">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <div id="formStatus" class="form-status" role="status"></div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="copyright">© <span id="currentYear"></span> Noor ul Amin — All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com/itxmeenu009" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/noor-ul-amin-sadiq-48823b3a7" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/923285520430" aria-label="WhatsApp" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/noorijopu89" aria-label="Instagram" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

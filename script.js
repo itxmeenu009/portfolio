@@ -155,13 +155,13 @@ async function handleSubmit(e) {
   formStatus.classList.remove("show", "success", "error");
 
   const templateParams = {
-    name: nameInput?.value || "Visitor",
-    email: emailInput?.value || "",
-    phone: phoneInput?.value || "",
-    message: messageInput?.value || "",
-    to_name: "Noor ul Amin",
-    reply_to: emailInput?.value || ""
-  };
+  from_name: nameInput?.value || "Visitor",
+  from_email: emailInput?.value || "",
+  phone_number: phoneInput?.value || "",
+  message: messageInput?.value || "",
+  to_name: "Noor ul Amin",
+  reply_to: emailInput?.value || ""
+};
 
   try {
     await emailjs.send(

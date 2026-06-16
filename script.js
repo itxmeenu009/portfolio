@@ -51,25 +51,25 @@ const projectsData = [
     title: "Landing Experience",
     description: "A performance-focused landing page with polished UI and smooth transitions.",
     tech: ["Next.js", "Tailwind", "TypeScript"],
-    href: "./Landing Page/index.html"
+    href: "./Landing Page index.html"
   },
   {
     title: "E-commerce UI Kit",
     description: "Component-driven UI kit with reusable patterns, accessibility, and motion.",
     tech: ["React", "Tailwind", "Framer Motion"],
-    href: "./E-commerce UI Kit/index.html"
+    href: "./E-commerce UI Kit index.html"
   },
   {
     title: "Dashboard Analytics",
     description: "Data-heavy dashboard layout optimized for readability and responsive behavior.",
     tech: ["Next.js", "Charts", "TypeScript"],
-    href: "./Dashboard Analytics/index.html"
+    href: "./Dashboard Analytics index.html"
   },
   {
     title: "Portfolio v2 Concept",
     description: "Glassmorphism + neon accents with crisp typography and interactive cards.",
     tech: ["UI/UX", "Motion", "Design System"],
-    href: "./Portfolio v2 Concept/index.html"
+    href: "./Portfolio v2 Concept index.html"
   }
 ];
 
